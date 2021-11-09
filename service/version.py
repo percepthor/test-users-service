@@ -2,8 +2,8 @@ from cerver.utils import LOG_TYPE_NONE, cerver_log_both
 
 USERS_VERSION = "0.1"
 USERS_VERSION_NAME = "Version 0.1"
-USERS_VERSION_DATE = "21/10/2021"
-USERS_VERSION_TIME = "23:26 CST"
+USERS_VERSION_DATE = "08/11/2021"
+USERS_VERSION_TIME = "22:22 CST"
 USERS_VERSION_AUTHOR = "Erick Salas"
 
 def users_service_version_print_full ():
