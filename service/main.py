@@ -2,8 +2,9 @@ import signal
 
 import cerver
 
+from db import percepthor_mongo_init
+from percepthor import percepthor_config, percepthor_init
 import service
-from config import service_config
 import version
 
 if __name__ == "__main__":
@@ -19,6 +20,9 @@ if __name__ == "__main__":
 
 	version.users_service_version_print_full ()
 
-	service_config ()
+	percepthor_config ()
 
-	service.start ()
+	if (percepthor_mongo_init ()):
+		percepthor_init ()
+
+		service.start ()
